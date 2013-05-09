@@ -1,0 +1,41 @@
+#!/usr/bin/make -f
+
+#export DH_VERBOSE=1
+
+build: build-arch build-indep
+build-arch: build-stamp
+build-indep: build-stamp
+build-stamp:
+	dh_testdir
+	touch $@
+
+clean:
+	dh_testdir
+	dh_testroot
+	rm -f build-stamp
+	dh_clean
+
+install: build
+	dh_testdir
+	dh_testroot
+	dh_prep
+	install -D -m644 ruhyphal.tex \
+	    debian/hyphen-ru/usr/share/hyphen/hyph_ru_RU.dic
+
+binary-indep: build install
+	dh_testdir
+	dh_testroot
+	dh_installchangelogs changelog
+	dh_installdocs debian/copyright
+	dh_link
+	dh_compress
+	dh_fixperms
+	dh_installdeb
+	dh_gencontrol
+	dh_md5sums
+	dh_builddeb
+
+binary-arch: build install
+
+binary: binary-indep binary-arch
+.PHONY: build clean binary-indep binary-arch binary install

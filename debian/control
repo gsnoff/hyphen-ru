@@ -1,0 +1,20 @@
+Source: hyphen-ru
+Section: text
+Priority: optional
+Maintainer: Ilyas Gasanov <torso.nafi@gmail.com>
+Build-Depends: debhelper (>= 7)
+Standards-Version: 3.9.4
+Homepage: http://scon155.phys.msu.su/~swan/hyphenation.html
+
+Package: hyphen-ru
+Architecture: all
+Depends: dictionaries-common (>= 0.10) | openoffice.org-updatedicts, ${misc:Depends}
+Recommends: libreoffice-writer | openoffice.org-writer
+Replaces: openoffice.org-hyphenation-ru
+Provides: hyphen-hyphenation-patterns, hyphen-hyphenation-patterns-ru, openoffice.org-hyphenation-ru
+Description: Russian hyphenation patterns for LibreOffice/OpenOffice.org
+ Hyphenation is the process of inserting hyphens in between the syllables of
+ a word so that when the text is justified, maximum space is utilized.
+ .
+ This package contains the Russian hyphenation patterns for
+ LibreOffice/OpenOffice.org
