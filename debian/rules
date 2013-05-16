@@ -2,40 +2,18 @@
 
 #export DH_VERBOSE=1
 
-build: build-arch build-indep
-build-arch: build-stamp
-build-indep: build-stamp
-build-stamp:
-	dh_testdir
-	touch $@
+%:
+	dh $@
 
-clean:
-	dh_testdir
-	dh_testroot
-	rm -f build-stamp
-	dh_clean
-
-install: build
-	dh_testdir
-	dh_testroot
-	dh_prep
+.PHONY: override_dh_auto_install
+override_dh_auto_install:
 	install -D -m644 ruhyphal.tex \
 	    debian/hyphen-ru/usr/share/hyphen/hyph_ru_RU.dic
 
-binary-indep: build install
-	dh_testdir
-	dh_testroot
-	dh_installchangelogs changelog
-	dh_installdocs debian/copyright
-	dh_link
-	dh_compress
-	dh_fixperms
-	dh_installdeb
-	dh_gencontrol
-	dh_md5sums
-	dh_builddeb
+.PHONY: override_dh_installdocs
+override_dh_installdocs:
+	dh_installdocs debian/README.source
 
-binary-arch: build install
-
-binary: binary-indep binary-arch
-.PHONY: build clean binary-indep binary-arch binary install
+.PHONY: override_dh_installchangelogs
+override_dh_installchangelogs:
+	dh_installchangelogs debian/upstream.changelog

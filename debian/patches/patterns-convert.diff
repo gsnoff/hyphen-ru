@@ -1,8 +1,12 @@
-Convert the TeX hyphenation patterns file to the LibreOffice syntax.
-Index: hyphen-ru-20030310/ruhyphal.tex
+Description: Convert TeX hyphenation patterns to LibreOffice syntax
+ This patch removes the TeX comments and patterns boundaries,
+ and applies an encoding header for LibreOffice parsing.
+Author: Ilyas Gasanov <torso.nafi@gmail.com>
+Last-Update: 2013-05-16
+Index: hyphen-ru/ruhyphal.tex
 ===================================================================
---- hyphen-ru-20030310.orig/ruhyphal.tex	2003-03-10 16:28:20.000000000 +0300
-+++ hyphen-ru-20030310/ruhyphal.tex	2013-05-13 11:52:42.035372253 +0400
+--- hyphen-ru.orig/ruhyphal.tex	2003-03-10 16:28:20.000000000 +0300
++++ hyphen-ru/ruhyphal.tex	2013-05-13 11:52:42.035372253 +0400
 @@ -1,19 +1,4 @@
 -% ruhyphal.tex:  Russian hyphenation patterns, version 2003/03/10
 -% Copyright 1999-2003 Alexander I. Lebedev <swan@scon155.phys.msu.su>
