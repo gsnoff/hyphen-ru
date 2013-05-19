@@ -1,15 +1,10 @@
-hyphen-ru (20030310-2) unstable; urgency=low
+hyphen-ru (20030310-1) unstable; urgency=low
 
+  * Initial release (closes: #707554).
   * Update to debhelper version 9.
   * Add repository information to debian/control.
   * debian/patches
     + Use DEP-3 format for the comments.
     + Move upstream changelog from patch tree to debian/upstream.changelog.
 
- -- Ilyas Gasanov <torso.nafi@gmail.com>  Thu, 16 May 2013 11:15:00 +0400 
-
-hyphen-ru (20030310-1) unstable; urgency=low
-
-  * Initial release (closes: #707554)
-
- -- Ilyas Gasanov <torso.nafi@gmail.com>  Thu, 9 May 2013 17:00:00 +0400
+ -- Ilyas Gasanov <torso.nafi@gmail.com>  Sat, 18 May 2013 20:15:29 +0400
