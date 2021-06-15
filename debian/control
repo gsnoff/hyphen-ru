@@ -2,7 +2,7 @@ Source: hyphen-ru
 Section: text
 Priority: optional
 Maintainer: Ilyas Gasanov <torso.nafi@gmail.com>
-Build-Depends: debhelper (>= 9)
+Build-Depends: debhelper
 Standards-Version: 3.9.4
 Vcs-Git: git://github.com/Protagores/hyphen-ru.git
 Vcs-Browser: http://github.com/Protagores/hyphen-ru
@@ -10,7 +10,7 @@ Homepage: http://scon155.phys.msu.su/~swan/hyphenation.html
 
 Package: hyphen-ru
 Architecture: all
-Depends: dictionaries-common (>= 0.10) | openoffice.org-updatedicts, ${misc:Depends}
+Depends: dictionaries-common | openoffice.org-updatedicts, ${misc:Depends}
 Recommends: libreoffice-writer | openoffice.org-writer
 Replaces: openoffice.org-hyphenation-ru
 Provides: hyphen-hyphenation-patterns, hyphen-hyphenation-patterns-ru, openoffice.org-hyphenation-ru
