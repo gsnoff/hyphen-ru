@@ -14,6 +14,7 @@ Depends: dictionaries-common (>= 0.10) | openoffice.org-updatedicts, ${misc:Depe
 Recommends: libreoffice-writer | openoffice.org-writer
 Replaces: openoffice.org-hyphenation-ru
 Provides: hyphen-hyphenation-patterns, hyphen-hyphenation-patterns-ru, openoffice.org-hyphenation-ru
+Multi-Arch: foreign
 Description: Russian hyphenation patterns for LibreOffice/OpenOffice.org
  Hyphenation is the process of inserting hyphens in between the syllables of
  a word so that when the text is justified, maximum space is utilized.
