@@ -2,10 +2,10 @@ Source: hyphen-ru
 Section: text
 Priority: optional
 Maintainer: Ilyas Gasanov <torso.nafi@gmail.com>
-Build-Depends: debhelper (>= 9)
+Build-Depends: debhelper-compat (= 13)
 Standards-Version: 3.9.4
-Vcs-Git: git://github.com/Protagores/hyphen-ru.git
-Vcs-Browser: http://github.com/Protagores/hyphen-ru
+Vcs-Git: https://github.com/Protagores/hyphen-ru.git
+Vcs-Browser: https://github.com/Protagores/hyphen-ru
 Homepage: http://scon155.phys.msu.su/~swan/hyphenation.html
 
 Package: hyphen-ru

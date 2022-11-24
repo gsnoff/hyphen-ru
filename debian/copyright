@@ -1,4 +1,4 @@
-Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: ruhyphal
 Upstream-Contact: Alexander I. Lebedev <swan@scon155.phys.msu.su>
 Source: http://scon155.phys.msu.su/~swan/hyphenation.html
